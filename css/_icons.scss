@@ -1,0 +1,105 @@
+@import "variables";
+@import "mixins";
+
+.ion-navicon {
+	font-size:4rem;
+	float:right;
+	cursor: pointer;
+}
+
+.cbp-spmenu .ion-ios-person-outline, .cbp-spmenu .ion-ios-book-outline, .cbp-spmenu .ion-ios-cloud-download-outline, .cbp-spmenu .ion-ios-chatbubble-outline, .cbp-spmenu .ion-ios-upload-outline, .cbp-spmenu .ion-ios-glasses-outline {
+	font-size: 2rem;
+	position: absolute;
+	right: 0;
+	margin: 0 20px 0 0;
+}
+
+.ion-header {
+	text-align:center;
+	margin:20px 0;
+	padding-top: 20px;
+
+	.ion-ios-book-outline, .ion-ios-person-outline, .ion-ios-cloud-download-outline, .ion-ios-chatbubble-outline, .ion-ios-glasses-outline {
+	font-size: 4rem;
+	color:#444444;
+	text-align:center;
+	
+	}
+
+}
+
+.macbook {
+
+ 	.ion-ios-location-outline, .ion-ios-heart-outline, .ion-paperclip {
+	color:#fff;
+	font-size: 4rem;
+	// border:1px solid #fff;
+	
+	
+	}
+
+}
+
+.red-btn {
+	display:inline-block;
+	text-decoration:none;
+	font-weight:100;
+	border:1px solid #B70F0A;
+	font-size:2rem;
+	color:#B70F0A;
+	padding: 1% 6%;
+	border-radius:6px;
+
+	&:hover {
+		background:#B70F0A;
+		color:#fff;
+		@include transition(background, 0.65s, ease-in-out);
+	}
+
+
+}
+
+
+.ion-social-facebook-outline, .ion-social-twitter-outline, .ion-ios-email-outline, .ion-ios-telephone-outline {
+	font-size: 3rem;
+	color:#fff;
+	margin-right:10px;
+}
+
+.copyright {
+	font-size:1.3rem;
+	text-align:center;
+	text-transform:uppercase;
+	padding:60px 10px;
+	margin-bottom: 0;
+
+	a {
+		text-decoration:none;
+		border-bottom: 1px dotted #aaa !important;
+		color:#B70F0A;
+	}
+
+
+	.ion-ios-heart {
+		color:#B70F0A;
+		font-size: 1.3rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

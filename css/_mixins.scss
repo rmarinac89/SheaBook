@@ -1,0 +1,41 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin background-size($size) {
+	-webkit-background-size: $size;
+     -moz-background-size: $size;
+      -ms-background-size: $size;
+          background-size: $size;
+}
+
+@mixin background-attachment($position) {
+  -webkit-background-size: $position;
+     -moz-background-size: $position;
+      -ms-background-size: $position;
+          background-size: $position;
+}
+
+@mixin transition($property, $duration, $easing) {
+	-webkit-transition: $property, $duration, $easing;
+	 -moz-transition: $property, $duration, $easing;
+	  -ms-transition: $property, $duration, $easing;
+	      transition: $property, $duration, $easing;
+}
+
+@mixin box-shadow($x, $y, $blur, $color) {
+	-webkit-box-shadow: $x, $y, $blur, $color;
+	 -moz-box-shadow: $x, $y, $blur, $color;
+	  -ms-box-shadow: $x, $y, $blur, $color;
+	      box-shadow: $x, $y, $blur, $color;
+}
+
+@mixin opacity($value) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=" + ($value * 100) + ")"; /* for IE8 in IE7 mode */
+  filter: alpha(opacity=($value * 100)); /* for IE6-IE8 */
+  -moz-opacity: ($value);
+  opacity: ($value);
+}

@@ -1,0 +1,302 @@
+p, .aboutBook, .ebook {
+  color: #929292;
+  line-height: 1.8;
+  font-size: 1.5rem; }
+
+.ion-navicon {
+  font-size: 4rem;
+  float: right;
+  cursor: pointer; }
+
+.cbp-spmenu .ion-ios-person-outline, .cbp-spmenu .ion-ios-book-outline, .cbp-spmenu .ion-ios-cloud-download-outline, .cbp-spmenu .ion-ios-chatbubble-outline, .cbp-spmenu .ion-ios-upload-outline, .cbp-spmenu .ion-ios-glasses-outline {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  margin: 0 20px 0 0; }
+
+.ion-header {
+  text-align: center;
+  margin: 20px 0;
+  padding-top: 20px; }
+  .ion-header .ion-ios-book-outline, .ion-header .ion-ios-person-outline, .ion-header .ion-ios-cloud-download-outline, .ion-header .ion-ios-chatbubble-outline, .ion-header .ion-ios-glasses-outline {
+    font-size: 4rem;
+    color: #444444;
+    text-align: center; }
+
+.macbook .ion-ios-location-outline, .macbook .ion-ios-heart-outline, .macbook .ion-paperclip {
+  color: #fff;
+  font-size: 4rem; }
+
+.red-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 100;
+  border: 1px solid #B70F0A;
+  font-size: 2rem;
+  color: #B70F0A;
+  padding: 1% 6%;
+  border-radius: 6px; }
+  .red-btn:hover {
+    background: #B70F0A;
+    color: #fff;
+    -webkit-transition: background, 0.65s, ease-in-out;
+    -moz-transition: background, 0.65s, ease-in-out;
+    -ms-transition: background, 0.65s, ease-in-out;
+    transition: background, 0.65s, ease-in-out; }
+
+.ion-social-facebook-outline, .ion-social-twitter-outline, .ion-ios-email-outline, .ion-ios-telephone-outline {
+  font-size: 3rem;
+  color: #fff;
+  margin-right: 10px; }
+
+.copyright {
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 60px 10px;
+  margin-bottom: 0; }
+  .copyright a {
+    text-decoration: none;
+    border-bottom: 1px dotted #aaa !important;
+    color: #B70F0A; }
+  .copyright .ion-ios-heart {
+    color: #B70F0A;
+    font-size: 1.3rem; }
+
+.brand {
+  padding: 20px; }
+
+.brand h2 {
+  font-family: "alex_brushregular";
+  font-size: 4rem;
+  display: inline-block;
+  margin: 8px 0 0 0; }
+
+.hero {
+  text-align: center; }
+
+.hero h1 {
+  margin-top: 50%; }
+
+.shea-hero {
+  height: auto;
+  max-width: 100%; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.36); }
+
+.aboutBook {
+  background: #f8f8f8; }
+  .aboutBook .col-md-12 {
+    padding: 0 5% 5%; }
+  .aboutBook h2 {
+    color: black;
+    margin: 15px 0 20px 0; }
+
+.aboutAuthor h2 {
+  color: black;
+  margin: 15px 0 20px 0; }
+.aboutAuthor .col-md-8 {
+  padding: 0 5% 5%; }
+.aboutAuthor p, .aboutAuthor .aboutBook, .aboutAuthor .ebook {
+  color: #929292;
+  line-height: 1.8;
+  font-size: 1.5rem; }
+.aboutAuthor .suit-img {
+  text-align: center; }
+
+.macbook {
+  position: relative;
+  background-image: url("../images/mac-notes.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  -webkit-background-size: fixed;
+  -moz-background-size: fixed;
+  -ms-background-size: fixed;
+  background-size: fixed;
+  min-height: 40em; }
+  .macbook .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 93, 85, 0.64); }
+  .macbook .col-md-4 {
+    text-align: center;
+    margin: 15% 0; }
+  .macbook p, .macbook .aboutBook, .macbook .ebook, .macbook h3, .macbook ul {
+    color: white; }
+  .macbook h3 {
+    margin: 20px 0; }
+  .macbook ul {
+    list-style-type: none;
+    padding-left: 0; }
+
+.ebook {
+  background: #f8f8f8; }
+  .ebook .pad {
+    padding: 0 10% 0 5%; }
+  .ebook h2 {
+    color: black;
+    margin: 15px 0 20px 0; }
+  .ebook a {
+    text-decoration: none;
+    margin: 8% 4% 20% 0; }
+
+.testimonials {
+  position: relative;
+  margin-bottom: 60px;
+  padding-bottom: 20px; }
+
+.hardcopy {
+  background: #f8f8f8; }
+  .hardcopy .col-md-6 {
+    padding: 0 5% 5%; }
+  .hardcopy h2 {
+    color: black;
+    margin: 15px 0 20px 0; }
+  .hardcopy a {
+    text-decoration: none;
+    margin: 40px 20px 0 0; }
+
+.social-media {
+  background: #444444; }
+  .social-media .social-outlets {
+    padding: 4%;
+    text-align: center; }
+    .social-media .social-outlets.facebook:hover {
+      background: #3b5998;
+      color: white; }
+    .social-media .social-outlets.twitter:hover {
+      background: #4099ff;
+      color: white; }
+    .social-media .social-outlets.mail:hover {
+      background: #b70f0a;
+      color: white; }
+    .social-media .social-outlets.phone:hover {
+      background: #169016;
+      color: white; }
+  .social-media a {
+    text-decoration: none; }
+
+.cbp-spmenu {
+  background: #444444;
+  position: fixed; }
+
+.cbp-spmenu h3 {
+  color: #afdefa;
+  font-size: 1.9rem;
+  padding: 20px;
+  margin: 0;
+  background: #444444; }
+
+.cbp-spmenu a {
+  display: block;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 300;
+  height: 60px;
+  line-height: 60px; }
+
+.cbp-spmenu a:hover {
+  background: rgba(106, 106, 106, 0.3);
+  text-decoration: none; }
+
+.cbp-spmenu a:active {
+  background: #afdefa;
+  color: #47a3da; }
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 1000; }
+
+.cbp-spmenu-vertical a {
+  border-bottom: 1px solid rgba(106, 106, 106, 0.3);
+  padding: 0 0 0 20px; }
+
+.cbp-spmenu-horizontal {
+  width: 100%;
+  height: 150px;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden; }
+
+.cbp-spmenu-horizontal h3 {
+  height: 100%;
+  width: 20%;
+  float: left; }
+
+.cbp-spmenu-horizontal a {
+  float: left;
+  width: 20%;
+  padding: 0.8em;
+  border-left: 1px solid #258ecd; }
+
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-left {
+  left: -240px; }
+
+.cbp-spmenu-right {
+  right: -240px; }
+
+.cbp-spmenu-left.cbp-spmenu-open {
+  left: 0px; }
+
+.cbp-spmenu-right.cbp-spmenu-open {
+  right: 0px; }
+
+/* Push classes applied to the body */
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0; }
+
+.cbp-spmenu-push-toright {
+  left: 240px; }
+
+.cbp-spmenu-push-toleft {
+  left: -240px; }
+
+/* Transitions */
+.cbp-spmenu,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+/* Example media queries */
+@media screen and (max-width: 55.1875em) {
+  .cbp-spmenu-horizontal {
+    font-size: 75%;
+    height: 110px; }
+
+  .cbp-spmenu-top {
+    top: -110px; }
+
+  .cbp-spmenu-bottom {
+    bottom: -110px; } }
+@media screen and (max-height: 26.375em) {
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px; }
+
+  .cbp-spmenu-left,
+  .cbp-spmenu-push-toleft {
+    left: -190px; }
+
+  .cbp-spmenu-right {
+    right: -190px; }
+
+  .cbp-spmenu-push-toright {
+    left: 190px; } }

@@ -1,0 +1,368 @@
+@import "colors";
+@import "mixins";
+@import "variables";
+@import "helpers";
+@import "icons";
+
+
+
+.brand {
+	padding:20px;
+}
+
+.brand h2 {
+	font-family: "alex_brushregular";
+	font-size: $h2font;
+	display:inline-block;
+	margin:8px 0 0 0;
+}
+
+.hero {
+	text-align:center;
+}
+
+.hero h1 {
+	margin-top:50%;
+}
+
+.shea-hero {
+	height:auto;
+	max-width:100%;
+
+
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.36);
+}
+
+.aboutBook {
+	background:$lightgrey;
+
+	.col-md-12 {
+		padding: 0 5% 5%;
+	}
+
+
+	h2 {
+		color: $black;
+		margin:15px 0 20px 0;
+		
+	}
+
+	@extend p;
+
+
+}
+
+.aboutAuthor {
+
+		h2 {
+		color: $black;
+		margin:15px 0 20px 0;	
+	
+	}
+
+		.col-md-8 {
+		padding: 0 5% 5%;
+	}
+
+	p {
+		color: $darkgrey;
+		line-height: 1.8;
+		font-size: 1.5rem;
+		// padding-right:60px;
+	}
+
+	.suit-img {
+		text-align: center;
+	}
+
+}
+
+.macbook {
+	position: relative;
+	background-image:url('../images/mac-notes.jpg');
+	@include background-size(cover);
+	@include background-attachment(fixed);
+	min-height:40em;
+
+	
+	.overlay {
+	position:absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height:100%;
+	background:rgba(255,93,85,0.64);
+	
+	}
+
+	.col-md-4 {
+		text-align: center;
+		margin:15% 0;
+	}
+
+	p, h3, ul {
+		color: $white;
+	}
+
+	h3 {
+		margin: 20px 0;
+		
+	}
+
+	ul {
+		list-style-type: none;
+		padding-left:0;
+	}
+
+
+
+}
+
+.ebook {
+	background:$lightgrey;
+
+	@extend p;
+
+	.pad {
+		padding: 0 10% 0 5%;
+	}
+
+	h2 {
+		color: $black;
+		margin:15px 0 20px 0;
+		
+	
+	}
+
+	a {
+	text-decoration: none;
+	margin: 8% 4% 20% 0;
+	}
+
+}
+
+.testimonials {
+	position:relative;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+}
+
+.hardcopy {
+	background:$lightgrey;
+
+	.col-md-6 {
+		padding: 0 5% 5%;
+	}
+
+
+		h2 {
+		color: $black;
+		margin:15px 0 20px 0;
+		
+	}
+
+		a {
+		text-decoration: none;
+		margin: 40px 20px 0 0;
+	}
+}
+
+.social-media {
+	background:#444444;
+
+
+
+	.social-outlets {
+		padding:4%;
+		text-align: center;
+
+		&.facebook:hover {
+			background:#3b5998;
+			color: $white;
+		}
+
+		&.twitter:hover {
+			background:#4099ff;
+			color: $white;
+		}
+
+		&.mail:hover {
+			background:#b70f0a;
+			color:$white;
+		}
+
+		&.phone:hover {
+			background:#169016;
+			color:$white;
+		}
+
+	}
+
+	a {
+		text-decoration:none;
+	}
+	
+}
+
+
+
+// Push Menu
+
+.cbp-spmenu {
+	background: #444444;
+	position: fixed;
+}
+
+.cbp-spmenu h3 {
+	color: #afdefa;
+	font-size: 1.9rem;
+	padding: 20px;
+	margin: 0;
+	background: #444444;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: $white;
+	font-size: 1.1em;
+	font-weight: 300;
+	height: 60px;
+	line-height: 60px;
+}
+
+.cbp-spmenu a:hover {
+	background: rgba(106,106,106,0.3);
+	text-decoration:none;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid rgba(106,106,106,0.3);
+	padding: 0 0 0 20px;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}
