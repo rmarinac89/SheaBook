@@ -101,6 +101,7 @@
 .slick-slider
 {
     margin:10% 0;
+    cursor: pointer;
 }
 
 .slick-dots
@@ -149,7 +150,6 @@
 }
 .slick-dots li button:before
 {
-    font-family: 'slick';
     font-size: 20px;
     line-height: 20px;
 

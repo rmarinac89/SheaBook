@@ -1,5 +1,6 @@
 // Fade Hero
 
+
 $(window).scroll(function(){
     $(".hero").css("opacity", 1 - $(window).scrollTop() / 850);
   });
@@ -23,9 +24,28 @@ function disableOther( button ) {
 		classie.toggle( showRightPush, 'disabled' );
 	}
 	else if (button == 'showRightPush') {
-		
+
 	}
 }
+
+// Toggle between menu icon and 'x' to close menu
+
+// $(document).ready(function(e) {
+// 	$('#showRightPush').click(function() {
+//     	$(this).toggleClass('ion-navicon ion-ios-close-empty');
+
+// 	});
+// });
+
+
+$(document).ready(function() {
+	$('#showRightPush').click(function() {
+    $(this).toggleClass('lines-button, close');
+  });
+});
+
+
+
 
 // Slick Slider
 
@@ -43,6 +63,8 @@ $(document).ready(function(){
 });
 
 // Click on icon menu and have it transition after into an x icon.
+
+
 
 
 
