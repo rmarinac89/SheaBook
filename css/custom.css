@@ -3,11 +3,6 @@ p, .aboutBook, .ebook {
   line-height: 1.8;
   font-size: 1.5rem; }
 
-.ion-navicon {
-  font-size: 4rem;
-  float: right;
-  cursor: pointer; }
-
 .cbp-spmenu .ion-ios-person-outline, .cbp-spmenu .ion-ios-book-outline, .cbp-spmenu .ion-ios-cloud-download-outline, .cbp-spmenu .ion-ios-chatbubble-outline, .cbp-spmenu .ion-ios-upload-outline, .cbp-spmenu .ion-ios-glasses-outline {
   font-size: 2rem;
   position: absolute;
@@ -64,13 +59,13 @@ p, .aboutBook, .ebook {
     font-size: 1.3rem; }
 
 .brand {
-  padding: 20px; }
+  padding: 20px 0; }
 
 .brand h2 {
   font-family: "alex_brushregular";
-  font-size: 4rem;
+  font-size: 3rem;
   display: inline-block;
-  margin: 8px 0 0 0; }
+  margin: 12px 0 0 0; }
 
 .hero {
   text-align: center; }
@@ -187,6 +182,84 @@ p, .aboutBook, .ebook {
   .social-media a {
     text-decoration: none; }
 
+.lines-button {
+  display: inline-block;
+  padding: 1rem 0;
+  -webkit-transition: none, 1s, none;
+  -moz-transition: none, 1s, none;
+  -ms-transition: none, 1s, none;
+  transition: none, 1s, none;
+  -webkit-border-radius: 0.35714rem;
+  -moz-border-radius: 0.35714rem;
+  -ms-border-radius: 0.35714rem;
+  border-radius: 0.35714rem;
+  float: right;
+  cursor: pointer;
+  user-select: none; }
+  .lines-button:hover {
+    opacity: 1; }
+
+.lines-button.x.close .lines {
+  /*hide the middle line*/
+  background: transparent;
+  /*overlay the lines by setting both their top values to 0*/ }
+  .lines-button.x.close .lines:before, .lines-button.x.close .lines:after {
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    top: 0;
+    width: 2.5rem; }
+  .lines-button.x.close .lines:before {
+    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-trasform: rotate3d(0, 0, 1, 45deg); }
+  .lines-button.x.close .lines:after {
+    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-trasform: rotate3d(0, 0, 1, -45deg); }
+
+.lines {
+  display: inline-block;
+  width: 2.5rem;
+  height: 0.2rem;
+  background: black;
+  -webkit-border-radius: 0.16667rem;
+  -moz-border-radius: 0.16667rem;
+  -ms-border-radius: 0.16667rem;
+  border-radius: 0.16667rem;
+  -webkit-transition: none, 1s, none;
+  -moz-transition: none, 1s, none;
+  -ms-transition: none, 1s, none;
+  transition: none, 1s, none;
+  position: relative;
+  /*create the upper and lower lines as pseudo-elements of the middle line*/ }
+  .lines:before, .lines:after {
+    display: inline-block;
+    width: 2.5rem;
+    height: 0.2rem;
+    background: black;
+    -webkit-border-radius: 0.16667rem;
+    -moz-border-radius: 0.16667rem;
+    -ms-border-radius: 0.16667rem;
+    border-radius: 0.16667rem;
+    -webkit-transition: none, 1s, none;
+    -moz-transition: none, 1s, none;
+    -ms-transition: none, 1s, none;
+    transition: none, 1s, none;
+    position: absolute;
+    left: 0;
+    content: '';
+    transform-origin: 0.16667rem center;
+    -webkit-transform-origin: 0.16667rem center; }
+  .lines:before {
+    top: 0.625rem; }
+  .lines:after {
+    top: -0.625rem; }
+
+.lines-button:hover {
+  opacity: 1; }
+  .lines-button:hover .lines:before {
+    top: 0.71429rem; }
+  .lines-button:hover .lines:after {
+    top: -0.71429rem; }
+
 .cbp-spmenu {
   background: #444444;
   position: fixed; }
@@ -194,9 +267,9 @@ p, .aboutBook, .ebook {
 .cbp-spmenu h3 {
   color: #afdefa;
   font-size: 1.9rem;
-  padding: 20px;
   margin: 0;
-  background: #444444; }
+  background: #444444;
+  padding: 34px 20px 20px; }
 
 .cbp-spmenu a {
   display: block;
@@ -261,9 +334,6 @@ p, .aboutBook, .ebook {
   overflow-x: hidden;
   position: relative;
   left: 0; }
-
-.cbp-spmenu-push-toright {
-  left: 240px; }
 
 .cbp-spmenu-push-toleft {
   left: -240px; }
