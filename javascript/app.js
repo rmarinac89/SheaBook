@@ -9,7 +9,7 @@ $(window).scroll(function(){
 // Change Fixed Navbar Background on Scroll
 // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable.
 
-var mainbottom = $('#main').offset().top + $('#main').height();
+var mainbottom = $('.navbar-fixed-top').offset().top + $('#main').height();
 
 // on scroll 
 $(window).on('scroll',function(){
