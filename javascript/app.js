@@ -93,11 +93,11 @@ $(document).ready(function() {
     
     $('.cbp-spmenu').animate({
       right: "0px"
-    }, 200);
+    }, 150);
 
     $('.cbp-spmenu-push').animate({
       left: "-240px"
-    }, 200);
+    }, 150);
   });
 
   /* Then push them back */
@@ -108,11 +108,11 @@ $(document).ready(function() {
       
     $('.cbp-spmenu').animate({
       right: "-240px"
-    }, 200);
+    }, 150);
 
     $('.cbp-spmenu-push').animate({
       left: "0px"
-    }, 200);
+    }, 150);
   });
 
 
