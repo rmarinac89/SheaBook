@@ -3,13 +3,21 @@
 
 
 
-// .ion-navicon, .ion-ios-close-empty {
-// 	font-size:4rem;
-// 	float:right;
-// 	cursor: pointer;
-// 	margin-top: -4px;
-// }
+ // .ion-navicon, .ion-ios-close-empty {
+	// font-size:4rem;
+	// padding: 1rem 0;
+	// float:right;
+	// cursor: pointer;
+	// margin-top: -4px;
+ // }
 
+.ion-ios-close-outline {
+	display:inline-block;
+	font-size:3rem;
+	float:right;
+	color:#fff;
+	cursor: pointer;
+}
 
 
 .cbp-spmenu .ion-ios-person-outline, .cbp-spmenu .ion-ios-book-outline, .cbp-spmenu .ion-ios-cloud-download-outline, .cbp-spmenu .ion-ios-chatbubble-outline, .cbp-spmenu .ion-ios-upload-outline, .cbp-spmenu .ion-ios-glasses-outline {
