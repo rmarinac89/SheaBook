@@ -5,20 +5,32 @@
 @import "icons";
 
 
+.navbar-fixed-top {
+	background-color:transparent;
+    @include transition(all, 0.25s, ease);
+}
+
+.past-hero {
+	border-bottom: 1px solid #f3f3f3;
+	background:rgba(255,255,255,1);
+
+}
+
 
 .brand {
-	padding:20px 0;
+	padding:15px 0;
 }
 
 .brand h2 {
 	font-family: "alex_brushregular";
 	font-size: $h2font;
 	display:inline-block;
-	margin:12px 0 0 0;
+	margin:10px 0 0 0;
 }
 
 .hero {
 	text-align:center;
+	padding-top:7%;
 }
 
 .hero h1 {
@@ -113,13 +125,15 @@
 	}
 
 	h3 {
-		margin: 20px 0;
+		margin: 20px 0 25px 0;
 		
 	}
 
-	ul {
+	.personal-list {
 		list-style-type: none;
-		padding-left:0;
+		padding-left:32%;
+		text-align: left;
+		line-height: 1.5;
 	}
 
 
@@ -156,7 +170,7 @@
 }
 
 .hardcopy {
-	background:$lightgrey;
+	background:$white;
 
 	.col-md-6 {
 		padding: 0 5% 5%;
@@ -214,6 +228,19 @@
 
 // Menu Icon
 
+.menu-icon {
+	float:right;
+
+	.bar {
+		height: 1px;
+		color: #000;
+		width:15px;
+	}
+}
+
+
+
+
 $color: #000;
 $button-size : 2.5rem; 
 $transition: 1s; // increase this to see the transformations in slow-motion
@@ -221,41 +248,13 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 .lines-button {
   display: inline-block;
   padding: $button-size/2.5 0;
-  @include transition(none, $transition, none);
   @include border-radius($button-size/7);
   float: right;
   cursor: pointer;
   user-select: none;
+  z-index: 9999;
   
  
-  &:hover {
-    opacity: 1;
-  }
- 
-}
-
-.lines-button.x.close .lines{
- 
-    /*hide the middle line*/
-    background: transparent;
- 
-    /*overlay the lines by setting both their top values to 0*/
-    &:before, &:after{
-      transform-origin: 50% 50%;
-      -webkit-transform-origin: 50% 50%;
-      top:0;
-      width: $button-size;
-    }
- 
-    // rotate the lines to form the x shape
-    &:before{
-      transform: rotate3d(0,0,1,45deg);
-      -webkit-trasform:rotate3d(0,0,1,45deg);
-    }
-    &:after{
-      transform: rotate3d(0,0,1,-45deg); 
-      -webkit-trasform:rotate3d(0,0,1,-45deg);
-    }
 }
 
 
@@ -267,7 +266,6 @@ $transition: 1s; // increase this to see the transformations in slow-motion
   height: 0.2rem;
   background: $color;
   @include border-radius($button-size/15);
-  @include transition(none, $transition, none);
   position: relative;
  
   /*create the upper and lower lines as pseudo-elements of the middle line*/
@@ -278,7 +276,6 @@ $transition: 1s; // increase this to see the transformations in slow-motion
   height: 0.2rem;
   background: $color;
   @include border-radius($button-size/15); 
-  @include transition(none, $transition, none);
     position: absolute;
       left:0;
     content: '';
@@ -306,15 +303,25 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 .cbp-spmenu {
 	background: #444444;
 	position: fixed;
+	z-index:9999;
 }
 
-.cbp-spmenu h3 {
-	color: #afdefa;
-	font-size: 1.9rem;
-	margin: 0;
+.menu-header {
 	background: #444444;
-	padding: 34px 20px 20px;
+	padding: 20px;
+	margin-bottom: 15px;
+
+
+	h3 {
+	display:inline-block;
+	color: #afdefa;
+	font-size: 2rem;
+	margin:0;
+	}
+
+
 }
+
 
 .cbp-spmenu a {
 	display: block;
@@ -341,7 +348,7 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 	width: 240px;
 	height: 100%;
 	top: 0;
-	z-index: 1000;
+	z-index: 9999;
 }
 
 .cbp-spmenu-vertical a {
@@ -353,7 +360,7 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 	width: 100%;
 	height: 150px;
 	left: 0;
-	z-index: 1000;
+	z-index: 9999;
 	overflow: hidden;
 }
 
@@ -418,6 +425,7 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 	.cbp-spmenu-horizontal {
 		font-size: 75%;
 		height: 110px;
+		overflow: auto;
 	}
 
 	.cbp-spmenu-top {
@@ -435,6 +443,7 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 	.cbp-spmenu-vertical {
 		font-size: 90%;
 		width: 190px;
+		overflow: auto;
 	}
 
 	.cbp-spmenu-left,

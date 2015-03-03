@@ -28,19 +28,18 @@
 
 		<body class="cbp-spmenu-push">
 			<div class="body-wrapper">
-			<header>
+			<header class="navbar-fixed-top">
 			  <div class="container">
 			  	<div class="brand">
 			  		<h2>Seamus Morrison</h2>
-			  		<!-- <i class="icon ion-navicon" id="showRightPush"></i> -->
-			  		<div type="button" role="button" aria-label="Toggle Navigation" class="lines-button x" id="showRightPush">
+			  		<div type="button" role="button" aria-label="Toggle Navigation" class="lines-button">
 					<span class="lines"></span>
-					</div>
+						</div>
 			  	</div>
 			  </div>
 			 </header>
 			
-			<div class="container hero">
+			<div class="container hero" id="main">
 				<div class="row">
 						<div class="col-md-6">
 							<h1>Hi, I'm Seamus. My parents are getting divorced...Now what?</h1>
@@ -52,13 +51,18 @@
 			</div>
 
 			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+				<div class="menu-header">
 				<h3>Menu</h3>
-				<a class="scroll" data-scroll href="#about">About the Book<i class="icon ion-ios-book-outline"></i></a>
-				<a data-scroll href="#author">About the Author<i class="icon ion-ios-person-outline"></i></a>
-				<a data-scroll href="#ebook">E-book<i class="icon ion-ios-cloud-download-outline"></i></a>
-				<a data-scroll href="#testimonial">Testimonials<i class="icon ion-ios-chatbubble-outline"></i></a>
-				<a data-scroll href="#hardcopy">Hardcopy<i class="icon ion-ios-glasses-outline"></i></a>
-				<a data-scroll href="#social">Social<i class="icon ion-ios-upload-outline"></i></a>
+				<i class="ion ion-ios-close-outline"></i>
+				</div>
+
+				<a class="animated-scroll" data-scroll href="#about">About the Book<i class="icon ion-ios-book-outline"></i></a>
+				<a class="animated-scroll" data-scroll href="#author">About the Author<i class="icon ion-ios-person-outline"></i></a>
+				<a class="animated-scroll" data-scroll href="#testimonial">Testimonials<i class="icon ion-ios-chatbubble-outline"></i></a>
+
+				<a class="animated-scroll" data-scroll href="#ebook">E-book<i class="icon ion-ios-cloud-download-outline"></i></a>
+				<a class="animated-scroll" data-scroll href="#hardcopy">Hardcopy<i class="icon ion-ios-glasses-outline"></i></a>
+				<a class="animated-scroll" data-scroll href="#social">Social<i class="icon ion-ios-upload-outline"></i></a>
 			</nav>
 
 			<section class="container-fluid aboutBook" id="about">
@@ -110,18 +114,18 @@
 						<div class="col-md-4">
 							<i class="icon ion-paperclip"></i>
 								<h3>Education</h3>
-									<ul>
+									<ul class="personal-list">
 										<li>York University (2013, BA)</li>
 										<li>Seneca College (2011)</li>
 									</ul>
 						</div>
 							<div class="col-md-4">
 								<i class="icon ion-ios-heart-outline"></i>
-									<h3>Charities</h3>
-										<ul>
+									<h3>Philanthropy</h3>
+										<ul class="personal-list">
 											<li>CIBC Run for the Cure</li>
 											<li>Habitat for Humanity</li>	
-											<li>Sick Kids</li>	
+											<li>Friends helping Sick Kids</li>	
 										</ul>
 							</div>
 						</div>
@@ -130,24 +134,7 @@
 		</section>
 
 
-			<section class="container-fluid ebook" id="ebook">
-				<div class="ion-header"><i class="icon ion-ios-cloud-download-outline"></i></div>
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
-						<img class="shea-hero" alt="idevices" src="images/mac-hero.png">
-					</div>
-					<div class="col-md-6 pad">
-						<h2>E-book.</h2>
-						<p>
-							For those that prefer a digital copy, the book is available for download from the iBooks Store on your Mac or iOS device, and with iTunes on your computer. A Kindle version and is also available on Amazon and Indigo for Kobo Reader.
-						</p>
-						<a class="red-btn" href="https://itunes.apple.com/us/book/my-parents-are-getting-divorced...now/id932649053?mt=11" target="_blank">iTunes</a>
-						<a class="red-btn" href="http://www.amazon.ca/Parents-Are-Getting-Divorced-What/dp/1460230485/ref=sr_1_1?ie=UTF8&qid=1421792481&sr=8-1&keywords=seamus+morrison" target="_blank">Amazon</a>
-						</div>
-					</div>
-			</section>
-
-			<section class="container testimonials" id="testimonial">
+					<section class="container testimonials" id="testimonial">
 				<div class="ion-header"><i class="icon ion-ios-chatbubble-outline"></i></div>
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
@@ -168,6 +155,26 @@
 					</div>
 				</div>
 			</section>
+
+
+
+			<section class="container-fluid ebook" id="ebook">
+				<div class="ion-header"><i class="icon ion-ios-cloud-download-outline"></i></div>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<img class="shea-hero" alt="idevices" src="images/mac-hero3.png">
+					</div>
+					<div class="col-md-6 pad">
+						<h2>E-book.</h2>
+						<p>
+							For those that prefer a digital copy, the book is available for download from the iBooks Store on your Mac or iOS device, and with iTunes on your computer. A Kindle version and is also available on Amazon and Indigo for Kobo Reader.
+						</p>
+						<a class="red-btn" href="https://itunes.apple.com/us/book/my-parents-are-getting-divorced...now/id932649053?mt=11" target="_blank">iTunes</a>
+						<a class="red-btn" href="http://www.amazon.ca/Parents-Are-Getting-Divorced-What/dp/1460230485/ref=sr_1_1?ie=UTF8&qid=1421792481&sr=8-1&keywords=seamus+morrison" target="_blank">Amazon</a>
+						</div>
+					</div>
+			</section>
+
 
 
 			<section class="container-fluid hardcopy" id="hardcopy">

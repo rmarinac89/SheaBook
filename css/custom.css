@@ -3,6 +3,13 @@ p, .aboutBook, .ebook {
   line-height: 1.8;
   font-size: 1.5rem; }
 
+.ion-ios-close-outline {
+  display: inline-block;
+  font-size: 3rem;
+  float: right;
+  color: #fff;
+  cursor: pointer; }
+
 .cbp-spmenu .ion-ios-person-outline, .cbp-spmenu .ion-ios-book-outline, .cbp-spmenu .ion-ios-cloud-download-outline, .cbp-spmenu .ion-ios-chatbubble-outline, .cbp-spmenu .ion-ios-upload-outline, .cbp-spmenu .ion-ios-glasses-outline {
   font-size: 2rem;
   position: absolute;
@@ -58,17 +65,29 @@ p, .aboutBook, .ebook {
     color: #B70F0A;
     font-size: 1.3rem; }
 
+.navbar-fixed-top {
+  background-color: transparent;
+  -webkit-transition: all, 0.25s, ease;
+  -moz-transition: all, 0.25s, ease;
+  -ms-transition: all, 0.25s, ease;
+  transition: all, 0.25s, ease; }
+
+.past-hero {
+  border-bottom: 1px solid #f3f3f3;
+  background: white; }
+
 .brand {
-  padding: 20px 0; }
+  padding: 15px 0; }
 
 .brand h2 {
   font-family: "alex_brushregular";
   font-size: 3rem;
   display: inline-block;
-  margin: 12px 0 0 0; }
+  margin: 10px 0 0 0; }
 
 .hero {
-  text-align: center; }
+  text-align: center;
+  padding-top: 7%; }
 
 .hero h1 {
   margin-top: 50%; }
@@ -130,10 +149,12 @@ p, .aboutBook, .ebook {
   .macbook p, .macbook .aboutBook, .macbook .ebook, .macbook h3, .macbook ul {
     color: white; }
   .macbook h3 {
-    margin: 20px 0; }
-  .macbook ul {
+    margin: 20px 0 25px 0; }
+  .macbook .personal-list {
     list-style-type: none;
-    padding-left: 0; }
+    padding-left: 32%;
+    text-align: left;
+    line-height: 1.5; }
 
 .ebook {
   background: #f8f8f8; }
@@ -152,7 +173,7 @@ p, .aboutBook, .ebook {
   padding-bottom: 20px; }
 
 .hardcopy {
-  background: #f8f8f8; }
+  background: white; }
   .hardcopy .col-md-6 {
     padding: 0 5% 5%; }
   .hardcopy h2 {
@@ -182,38 +203,24 @@ p, .aboutBook, .ebook {
   .social-media a {
     text-decoration: none; }
 
+.menu-icon {
+  float: right; }
+  .menu-icon .bar {
+    height: 1px;
+    color: #000;
+    width: 15px; }
+
 .lines-button {
   display: inline-block;
   padding: 1rem 0;
-  -webkit-transition: none, 1s, none;
-  -moz-transition: none, 1s, none;
-  -ms-transition: none, 1s, none;
-  transition: none, 1s, none;
   -webkit-border-radius: 0.35714rem;
   -moz-border-radius: 0.35714rem;
   -ms-border-radius: 0.35714rem;
   border-radius: 0.35714rem;
   float: right;
   cursor: pointer;
-  user-select: none; }
-  .lines-button:hover {
-    opacity: 1; }
-
-.lines-button.x.close .lines {
-  /*hide the middle line*/
-  background: transparent;
-  /*overlay the lines by setting both their top values to 0*/ }
-  .lines-button.x.close .lines:before, .lines-button.x.close .lines:after {
-    transform-origin: 50% 50%;
-    -webkit-transform-origin: 50% 50%;
-    top: 0;
-    width: 2.5rem; }
-  .lines-button.x.close .lines:before {
-    transform: rotate3d(0, 0, 1, 45deg);
-    -webkit-trasform: rotate3d(0, 0, 1, 45deg); }
-  .lines-button.x.close .lines:after {
-    transform: rotate3d(0, 0, 1, -45deg);
-    -webkit-trasform: rotate3d(0, 0, 1, -45deg); }
+  user-select: none;
+  z-index: 9999; }
 
 .lines {
   display: inline-block;
@@ -224,10 +231,6 @@ p, .aboutBook, .ebook {
   -moz-border-radius: 0.16667rem;
   -ms-border-radius: 0.16667rem;
   border-radius: 0.16667rem;
-  -webkit-transition: none, 1s, none;
-  -moz-transition: none, 1s, none;
-  -ms-transition: none, 1s, none;
-  transition: none, 1s, none;
   position: relative;
   /*create the upper and lower lines as pseudo-elements of the middle line*/ }
   .lines:before, .lines:after {
@@ -239,10 +242,6 @@ p, .aboutBook, .ebook {
     -moz-border-radius: 0.16667rem;
     -ms-border-radius: 0.16667rem;
     border-radius: 0.16667rem;
-    -webkit-transition: none, 1s, none;
-    -moz-transition: none, 1s, none;
-    -ms-transition: none, 1s, none;
-    transition: none, 1s, none;
     position: absolute;
     left: 0;
     content: '';
@@ -262,14 +261,18 @@ p, .aboutBook, .ebook {
 
 .cbp-spmenu {
   background: #444444;
-  position: fixed; }
+  position: fixed;
+  z-index: 9999; }
 
-.cbp-spmenu h3 {
-  color: #afdefa;
-  font-size: 1.9rem;
-  margin: 0;
+.menu-header {
   background: #444444;
-  padding: 34px 20px 20px; }
+  padding: 20px;
+  margin-bottom: 15px; }
+  .menu-header h3 {
+    display: inline-block;
+    color: #afdefa;
+    font-size: 2rem;
+    margin: 0; }
 
 .cbp-spmenu a {
   display: block;
@@ -292,7 +295,7 @@ p, .aboutBook, .ebook {
   width: 240px;
   height: 100%;
   top: 0;
-  z-index: 1000; }
+  z-index: 9999; }
 
 .cbp-spmenu-vertical a {
   border-bottom: 1px solid rgba(106, 106, 106, 0.3);
@@ -302,7 +305,7 @@ p, .aboutBook, .ebook {
   width: 100%;
   height: 150px;
   left: 0;
-  z-index: 1000;
+  z-index: 9999;
   overflow: hidden; }
 
 .cbp-spmenu-horizontal h3 {
@@ -349,7 +352,8 @@ p, .aboutBook, .ebook {
 @media screen and (max-width: 55.1875em) {
   .cbp-spmenu-horizontal {
     font-size: 75%;
-    height: 110px; }
+    height: 110px;
+    overflow: auto; }
 
   .cbp-spmenu-top {
     top: -110px; }
@@ -359,7 +363,8 @@ p, .aboutBook, .ebook {
 @media screen and (max-height: 26.375em) {
   .cbp-spmenu-vertical {
     font-size: 90%;
-    width: 190px; }
+    width: 190px;
+    overflow: auto; }
 
   .cbp-spmenu-left,
   .cbp-spmenu-push-toleft {
