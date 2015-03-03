@@ -247,7 +247,7 @@ $transition: 1s; // increase this to see the transformations in slow-motion
  
 .lines-button {
   display: inline-block;
-  padding: $button-size/2.5 0;
+  padding: $button-size/3.125 0;
   @include border-radius($button-size/7);
   float: right;
   cursor: pointer;
