@@ -93,7 +93,7 @@ $(document).ready(function() {
     
     $('.cbp-spmenu').animate({
       right: "0px"
-    }, 150);
+    }, 1400, 'easeOutExpo');
 
 
   });
@@ -106,7 +106,7 @@ $(document).ready(function() {
       
     $('.cbp-spmenu').animate({
       right: "-240px"
-    }, 150);
+    }, 200);
 
   });
 
