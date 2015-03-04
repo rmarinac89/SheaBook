@@ -5,6 +5,12 @@
 @import "icons";
 
 
+// html, body {
+// 	@include transition(all, 1000, easeInOutCubic);
+  	
+// }
+
+
 .navbar-fixed-top {
 	background-color:transparent;
     @include transition(all, 0.25s, ease);
@@ -29,13 +35,23 @@
 }
 
 .hero {
-	text-align:center;
 	padding-top:7%;
+
+	h1 {
+	margin-top:45%;
+	margin-bottom:8%;
+	}
+
+	a:focus, a:hover {
+	text-decoration: none !important;
+	}
+
+	.red-btn {
+		margin:0 10px 0 0;
+	}
 }
 
-.hero h1 {
-	margin-top:50%;
-}
+
 
 .shea-hero {
 	height:auto;
@@ -398,25 +414,25 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 
 /* Push classes applied to the body */
 
-.cbp-spmenu-push {
-	overflow-x: hidden;
-	position: relative;
-	left: 0;
-}
+// .cbp-spmenu-push {
+// 	overflow-x: hidden;
+// 	position: relative;
+// 	left: 0;
+// }
 
 
-.cbp-spmenu-push-toleft {
-	left: -240px;
-}
+// .cbp-spmenu-push-toleft {
+// 	left: -240px;
+// }
 
 /* Transitions */
 
-.cbp-spmenu,
-.cbp-spmenu-push {
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
+// .cbp-spmenu,
+// .cbp-spmenu-push {
+// 	-webkit-transition: all 0.3s ease;
+// 	-moz-transition: all 0.3s ease;
+// 	transition: all 0.3s ease;
+// }
 
 /* Example media queries */
 

@@ -95,9 +95,7 @@ $(document).ready(function() {
       right: "0px"
     }, 150);
 
-    $('.cbp-spmenu-push').animate({
-      left: "-240px"
-    }, 150);
+
   });
 
   /* Then push them back */
@@ -110,11 +108,7 @@ $(document).ready(function() {
       right: "-240px"
     }, 150);
 
-    $('.cbp-spmenu-push').animate({
-      left: "0px"
-    }, 150);
   });
-
 
 });
 
@@ -134,6 +128,27 @@ $(document).ready(function(){
 	});
 
 });
+
+
+// Smooth Scroll
+
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').delay(500).animate({
+                 scrollTop: target.offset().top-74
+             }, 1000, 'easeInOutCubic');
+            return false;
+        }
+    }
+});
+
+//after 1000 which is the speed, put a comma and inlcude a different ease if you wish
 
 
 
