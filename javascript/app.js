@@ -85,7 +85,7 @@ $(window).on('scroll',function(){
 
 $(document).ready(function() {
 
-  /* Push the body and the nav over by 285px over */
+  /* Slide the nav over by 285px over */
   $('.lines-button').click(function() {
     
      var menu = $('.lines-button');
@@ -98,9 +98,9 @@ $(document).ready(function() {
 
   });
 
-  /* Then push them back */
+  /* Then slide nav back */
   $('.ion-ios-close-outline, .animated-scroll').click(function() {
-      
+   
         var menu = $('.lines-button');
     menu.animate({ opacity: 1 }, 200);
       
@@ -148,7 +148,6 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
 });
 
-//after 1000 which is the speed, put a comma and inlcude a different ease if you wish
 
 
 

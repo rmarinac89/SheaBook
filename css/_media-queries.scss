@@ -1,0 +1,68 @@
+///// ** 16px = 1em ** /////
+
+
+//991px
+
+
+
+
+
+//883px
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+		overflow: auto;
+	}
+
+}
+
+
+//330px
+@media screen and (max-width: 20.625em) {
+
+	.hero .shea-hero {
+		margin-top: 22%;
+		margin-bottom: 14%;
+	}
+
+	.brand h2 {
+		font-size: 2.6rem;
+	}
+
+	.lines-button {
+	padding:0.6rem 0;
+	}
+
+	.aboutAuthor .shea-hero {
+		margin:10% 0;
+	}
+
+	.macbook {
+		min-height: 63em;
+	}
+
+	.testimonials {
+		margin-bottom: 6.25em;
+	}
+
+}
+
+
+//422px
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+		overflow: auto;
+	}
+
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+
+}
