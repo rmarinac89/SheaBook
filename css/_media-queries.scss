@@ -1,5 +1,6 @@
 ///// ** 16px = 1em ** /////
 
+//330px = 20.625em
 
 //991px
 
@@ -19,12 +20,46 @@
 }
 
 
-//330px
-@media screen and (max-width: 20.625em) {
+
+
+//761px = 47.5626em to 991px 
+@media screen and (min-width:47.5626em) and (max-width: 61.9375em) {
+	
+	.hero .shea-hero {
+		margin-top: 6em;
+		margin-bottom: 4em;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.aboutAuthor .shea-hero {
+		margin:10% 0;
+	}
+
+	.aboutAuthor .col-md-8 {
+	padding: 5% 5%;
+	}
+
+	.macbook {
+		min-height: 70em;
+	}
+	
+}
+
+
+
+//760px = 47.5em
+@media screen and (max-width: 47.5em) {
 
 	.hero .shea-hero {
-		margin-top: 22%;
-		margin-bottom: 14%;
+		margin-top: 6em;
+		margin-bottom: 4em;
+	}
+
+	.center {
+		text-align: center;
 	}
 
 	.brand {
@@ -53,6 +88,8 @@
 	// }
 
 }
+
+
 
 
 //422px
