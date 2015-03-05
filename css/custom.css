@@ -6,6 +6,7 @@ p, .aboutBook, .ebook {
 .ion-ios-close-outline {
   display: inline-block;
   margin-top: -3px;
+  margin-right: -5px;
   font-size: 3rem;
   float: right;
   color: #fff;
@@ -95,10 +96,9 @@ p, .aboutBook, .ebook {
     text-decoration: none !important; }
   .hero .red-btn {
     margin: 0 10px 0 0; }
-
-.shea-hero {
-  height: auto;
-  max-width: 100%; }
+  .hero .shea-hero {
+    height: auto;
+    max-width: 100%; }
 
 .overlay {
   position: absolute;
@@ -127,6 +127,9 @@ p, .aboutBook, .ebook {
   font-size: 1.5rem; }
 .aboutAuthor .suit-img {
   text-align: center; }
+.aboutAuthor .shea-hero {
+  height: auto;
+  max-width: 100%; }
 
 .macbook {
   position: relative;
@@ -149,16 +152,11 @@ p, .aboutBook, .ebook {
     background: rgba(255, 93, 85, 0.64); }
   .macbook .col-md-4 {
     text-align: center;
-    margin: 15% 0; }
+    margin: 14% 0; }
   .macbook p, .macbook .aboutBook, .macbook .ebook, .macbook h3, .macbook ul {
     color: white; }
   .macbook h3 {
-    margin: 20px 0 25px 0; }
-  .macbook .personal-list {
-    list-style-type: none;
-    padding-left: 32%;
-    text-align: left;
-    line-height: 1.5; }
+    margin: 20px 0 30px 0; }
 
 .ebook {
   background: #f8f8f8; }
@@ -170,6 +168,9 @@ p, .aboutBook, .ebook {
   .ebook a {
     text-decoration: none;
     margin: 8% 4% 20% 0; }
+  .ebook .shea-hero {
+    height: auto;
+    max-width: 100%; }
 
 .testimonials {
   position: relative;
@@ -186,6 +187,9 @@ p, .aboutBook, .ebook {
   .hardcopy a {
     text-decoration: none;
     margin: 40px 20px 0 0; }
+  .hardcopy .shea-hero {
+    height: auto;
+    max-width: 100%; }
 
 .social-media {
   background: #444444; }
@@ -267,6 +271,19 @@ p, .aboutBook, .ebook {
   background: #444444;
   position: fixed;
   z-index: 9999; }
+  .cbp-spmenu a {
+    display: block;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 300;
+    height: 60px;
+    line-height: 60px; }
+  .cbp-spmenu a:hover {
+    background: rgba(106, 106, 106, 0.3);
+    text-decoration: none; }
+  .cbp-spmenu a:active {
+    background: #afdefa;
+    color: #47a3da; }
 
 .menu-header {
   background: #444444;
@@ -278,32 +295,15 @@ p, .aboutBook, .ebook {
     font-size: 2rem;
     margin: 0; }
 
-.cbp-spmenu a {
-  display: block;
-  color: white;
-  font-size: 1.1em;
-  font-weight: 300;
-  height: 60px;
-  line-height: 60px; }
-
-.cbp-spmenu a:hover {
-  background: rgba(106, 106, 106, 0.3);
-  text-decoration: none; }
-
-.cbp-spmenu a:active {
-  background: #afdefa;
-  color: #47a3da; }
-
 /* Orientation-dependent styles for the content of the menu */
 .cbp-spmenu-vertical {
   width: 240px;
   height: 100%;
   top: 0;
   z-index: 9999; }
-
-.cbp-spmenu-vertical a {
-  border-bottom: 1px solid rgba(106, 106, 106, 0.3);
-  padding: 0 0 0 20px; }
+  .cbp-spmenu-vertical a {
+    border-bottom: 1px solid rgba(106, 106, 106, 0.3);
+    padding: 0 0 0 20px; }
 
 .cbp-spmenu-horizontal {
   width: 100%;
@@ -311,27 +311,19 @@ p, .aboutBook, .ebook {
   left: 0;
   z-index: 9999;
   overflow: hidden; }
+  .cbp-spmenu-horizontal h3 {
+    height: 100%;
+    width: 20%;
+    float: left; }
+  .cbp-spmenu-horizontal a {
+    float: left;
+    width: 20%;
+    padding: 0.8em;
+    border-left: 1px solid #258ecd; }
 
-.cbp-spmenu-horizontal h3 {
-  height: 100%;
-  width: 20%;
-  float: left; }
-
-.cbp-spmenu-horizontal a {
-  float: left;
-  width: 20%;
-  padding: 0.8em;
-  border-left: 1px solid #258ecd; }
-
-/* Vertical menu that slides from the left or right */
-.cbp-spmenu-left {
-  left: -240px; }
-
+/* Vertical menu slides from the right */
 .cbp-spmenu-right {
   right: -240px; }
-
-.cbp-spmenu-left.cbp-spmenu-open {
-  left: 0px; }
 
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0px; }
@@ -343,25 +335,31 @@ p, .aboutBook, .ebook {
   .cbp-spmenu-horizontal {
     font-size: 75%;
     height: 110px;
-    overflow: auto; }
+    overflow: auto; } }
+@media screen and (max-width: 20.625em) {
+  .hero .shea-hero {
+    margin-top: 22%;
+    margin-bottom: 14%; }
 
-  .cbp-spmenu-top {
-    top: -110px; }
+  .brand h2 {
+    font-size: 2.6rem; }
 
-  .cbp-spmenu-bottom {
-    bottom: -110px; } }
+  .lines-button {
+    padding: 0.6rem 0; }
+
+  .aboutAuthor .shea-hero {
+    margin: 10% 0; }
+
+  .macbook {
+    min-height: 63em; }
+
+  .testimonials {
+    margin-bottom: 6.25em; } }
 @media screen and (max-height: 26.375em) {
   .cbp-spmenu-vertical {
     font-size: 90%;
     width: 190px;
     overflow: auto; }
 
-  .cbp-spmenu-left,
-  .cbp-spmenu-push-toleft {
-    left: -190px; }
-
   .cbp-spmenu-right {
-    right: -190px; }
-
-  .cbp-spmenu-push-toright {
-    left: 190px; } }
+    right: -190px; } }

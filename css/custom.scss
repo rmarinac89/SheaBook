@@ -5,10 +5,7 @@
 @import "icons";
 
 
-// html, body {
-// 	@include transition(all, 1000, easeInOutCubic);
-  	
-// }
+// Fixed Header
 
 
 .navbar-fixed-top {
@@ -34,6 +31,9 @@
 	margin:10px 0 0 0;
 }
 
+
+// Landing
+
 .hero {
 	padding-top:7%;
 
@@ -49,16 +49,18 @@
 	.red-btn {
 		margin:0 10px 0 0;
 	}
-}
 
-
-
-.shea-hero {
+	.shea-hero {
 	height:auto;
 	max-width:100%;
 
+	}
 
 }
+
+
+
+
 
 .overlay {
   position:absolute;
@@ -88,6 +90,8 @@
 
 }
 
+// About the Author
+
 .aboutAuthor {
 
 		h2 {
@@ -111,7 +115,14 @@
 		text-align: center;
 	}
 
+	.shea-hero {
+	height:auto;
+	max-width:100%;
+
+	}
+
 }
+
 
 .macbook {
 	position: relative;
@@ -133,7 +144,7 @@
 
 	.col-md-4 {
 		text-align: center;
-		margin:15% 0;
+		margin:14% 0;
 	}
 
 	p, h3, ul {
@@ -141,20 +152,15 @@
 	}
 
 	h3 {
-		margin: 20px 0 25px 0;
+		margin: 20px 0 30px 0;
 		
 	}
 
-	.personal-list {
-		list-style-type: none;
-		padding-left:32%;
-		text-align: left;
-		line-height: 1.5;
-	}
-
-
 
 }
+
+// E-book
+
 
 .ebook {
 	background:$lightgrey;
@@ -173,11 +179,21 @@
 	}
 
 	a {
-	text-decoration: none;
-	margin: 8% 4% 20% 0;
+		text-decoration: none;
+		margin: 8% 4% 20% 0;
+	}
+
+	.shea-hero {
+		height:auto;
+		max-width:100%;
+
 	}
 
 }
+
+
+// Testimonials
+
 
 .testimonials {
 	position:relative;
@@ -203,7 +219,17 @@
 		text-decoration: none;
 		margin: 40px 20px 0 0;
 	}
+
+		.shea-hero {
+			height:auto;
+			max-width:100%;
+
+	}
 }
+
+
+// Social Media
+
 
 .social-media {
 	background:#444444;
@@ -242,6 +268,7 @@
 	
 }
 
+
 // Menu Icon
 
 .menu-icon {
@@ -253,7 +280,6 @@
 		width:15px;
 	}
 }
-
 
 
 
@@ -314,13 +340,35 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 
 
 
-// Push Menu
+// Slide Off-Canvas Menu
 
 .cbp-spmenu {
 	background: #444444;
 	position: fixed;
 	z-index:9999;
+
+	& a {
+	display: block;
+	color: $white;
+	font-size: 1.1em;
+	font-weight: 300;
+	height: 60px;
+	line-height: 60px;
+	}
+
+	& a:hover {
+		background: rgba(106,106,106,0.3);
+		text-decoration:none;
+	}
+
+	& a:active {
+		background: #afdefa; //menu blue
+		color: #47a3da;
+	}
+
+
 }
+
 
 .menu-header {
 	background: #444444;
@@ -339,25 +387,6 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 }
 
 
-.cbp-spmenu a {
-	display: block;
-	color: $white;
-	font-size: 1.1em;
-	font-weight: 300;
-	height: 60px;
-	line-height: 60px;
-}
-
-.cbp-spmenu a:hover {
-	background: rgba(106,106,106,0.3);
-	text-decoration:none;
-}
-
-.cbp-spmenu a:active {
-	background: #afdefa;
-	color: #47a3da;
-}
-
 /* Orientation-dependent styles for the content of the menu */
 
 .cbp-spmenu-vertical {
@@ -365,12 +394,14 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 	height: 100%;
 	top: 0;
 	z-index: 9999;
+
+	 a {
+		border-bottom: 1px solid rgba(106,106,106,0.3);
+		padding: 0 0 0 20px;	
+	}
 }
 
-.cbp-spmenu-vertical a {
-	border-bottom: 1px solid rgba(106,106,106,0.3);
-	padding: 0 0 0 20px;
-}
+
 
 .cbp-spmenu-horizontal {
 	width: 100%;
@@ -378,34 +409,30 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 	left: 0;
 	z-index: 9999;
 	overflow: hidden;
+
+	h3 {
+		height: 100%;
+		width: 20%;
+		float: left;	
+	}
+
+	a {
+		float: left;
+		width: 20%;
+		padding: 0.8em;
+		border-left: 1px solid #258ecd;
+	}
 }
 
-.cbp-spmenu-horizontal h3 {
-	height: 100%;
-	width: 20%;
-	float: left;
-}
 
-.cbp-spmenu-horizontal a {
-	float: left;
-	width: 20%;
-	padding: 0.8em;
-	border-left: 1px solid #258ecd;
-}
 
-/* Vertical menu that slides from the left or right */
+/* Vertical menu slides from the right */
 
-.cbp-spmenu-left {
-	left: -240px;
-}
 
 .cbp-spmenu-right {
 	right: -240px;
 }
 
-.cbp-spmenu-left.cbp-spmenu-open {
-	left: 0px;
-}
 
 .cbp-spmenu-right.cbp-spmenu-open {
 	right: 0px;
@@ -436,42 +463,5 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 
 /* Example media queries */
 
-@media screen and (max-width: 55.1875em){
+@import "media-queries";
 
-	.cbp-spmenu-horizontal {
-		font-size: 75%;
-		height: 110px;
-		overflow: auto;
-	}
-
-	.cbp-spmenu-top {
-		top: -110px;
-	}
-
-	.cbp-spmenu-bottom {
-		bottom: -110px;
-	}
-
-}
-
-@media screen and (max-height: 26.375em){
-
-	.cbp-spmenu-vertical {
-		font-size: 90%;
-		width: 190px;
-		overflow: auto;
-	}
-
-	.cbp-spmenu-left,
-	.cbp-spmenu-push-toleft {
-		left: -190px;
-	}
-
-	.cbp-spmenu-right {
-		right: -190px;
-	}
-
-	.cbp-spmenu-push-toright {
-		left: 190px;
-	}
-}
