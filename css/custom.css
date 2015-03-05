@@ -338,7 +338,7 @@ p, .aboutBook, .ebook {
     overflow: auto; } }
 @media screen and (min-width: 47.5626em) and (max-width: 61.9375em) {
   .hero .shea-hero {
-    margin-top: 6em;
+    margin-top: 5em;
     margin-bottom: 4em; }
 
   .center {
@@ -354,7 +354,7 @@ p, .aboutBook, .ebook {
     min-height: 70em; } }
 @media screen and (max-width: 47.5em) {
   .hero .shea-hero {
-    margin-top: 6em;
+    margin-top: 5em;
     margin-bottom: 4em; }
 
   .center {
