@@ -341,8 +341,10 @@ p, .aboutBook, .ebook {
     margin-top: 22%;
     margin-bottom: 14%; }
 
-  .brand h2 {
-    font-size: 2.6rem; }
+  .brand {
+    padding: 18px 0; }
+    .brand h2 {
+      font-size: 2.6rem; }
 
   .lines-button {
     padding: 0.6rem 0; }
@@ -351,10 +353,7 @@ p, .aboutBook, .ebook {
     margin: 10% 0; }
 
   .macbook {
-    min-height: 63em; }
-
-  .testimonials {
-    margin-bottom: 6.25em; } }
+    min-height: 63em; } }
 @media screen and (max-height: 26.375em) {
   .cbp-spmenu-vertical {
     font-size: 90%;

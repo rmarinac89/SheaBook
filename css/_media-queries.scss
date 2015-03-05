@@ -27,9 +27,14 @@
 		margin-bottom: 14%;
 	}
 
-	.brand h2 {
-		font-size: 2.6rem;
+	.brand {
+		padding:18px 0;
+
+		h2 {
+		font-size: 2.6rem;	
+		}
 	}
+
 
 	.lines-button {
 	padding:0.6rem 0;
@@ -43,9 +48,9 @@
 		min-height: 63em;
 	}
 
-	.testimonials {
-		margin-bottom: 6.25em;
-	}
+	// .testimonials {
+	// 	margin-bottom: 6.25em;
+	// }
 
 }
 
