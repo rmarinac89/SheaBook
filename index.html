@@ -22,13 +22,14 @@
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
 		<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="css/slick.css">
 		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	</head>
 
 		<body>
 			<div class="body-wrapper">
-			<header class="navbar-fixed-top">
+			<header class="navbar-fixed-top wow slideInDown" data-wow-delay="1s" data-wow-duration="1s">
 			  <div class="container">
 			  	<div class="brand">
 			  		<h2>Seamus Morrison</h2>
@@ -39,7 +40,7 @@
 			  </div>
 			 </header>
 			
-			<div class="container hero" id="main">
+			<div class="container hero wow fadeIn" data-wow-delay="0.8s" data-wow-duration="1s" id="main">
 				<div class="row">
 						<div class="col-md-6 hidden-sm hidden-xs">
 							<h1>&quot;My Parents are Getting Divorced…Now What? is very real. The author does not sugar coat anything, he is raw and authentic. This is a must read for any family in this situation.&quot;</h1>
@@ -67,7 +68,7 @@
 				<a class="animated-scroll" href="#social">Social<i class="icon ion-ios-upload-outline"></i></a>
 			</nav>
 
-			<section class="container-fluid aboutBook" id="about">
+			<section class="container-fluid aboutBook wow fadeIn" id="about">
 				<div class="ion-header"><i class="icon ion-ios-book-outline"></i></div>
 				<div class="container">
 				<div class="row">
@@ -84,7 +85,7 @@
 			</section>
 
 
-			<section class="container-fluid aboutAuthor" id="author">
+			<section class="container-fluid aboutAuthor wow fadeIn" id="author">
 				<div class="ion-header hidden-sm hidden-xs"><i class="icon ion-ios-person-outline"></i></div>
 				<div class="container">
 				<div class="row">
@@ -104,7 +105,7 @@
 			</section>
 
 
-		<section class="container-fluid macbook">
+		<section class="container-fluid macbook wow fadeIn">
 			<div class="overlay">
 			<div class="container">
 				<div class="row">
@@ -130,7 +131,7 @@
 		</section>
 
 
-					<section class="container testimonials" id="testimonial">
+					<section class="container testimonials wow fadeIn" id="testimonial">
 				<div class="ion-header"><i class="icon ion-ios-chatbubble-outline"></i></div>
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
@@ -154,7 +155,7 @@
 
 
 
-			<section class="container-fluid ebook" id="ebook">
+			<section class="container-fluid ebook wow fadeIn" id="ebook">
 				<div class="ion-header"><i class="icon ion-ios-cloud-download-outline"></i></div>
 				<div class="row">
 					<div class="col-md-6 col-sm-12">
@@ -173,7 +174,7 @@
 
 
 
-			<section class="container-fluid hardcopy" id="hardcopy">
+			<section class="container-fluid hardcopy wow fadeIn" id="hardcopy">
 				<div class="ion-header"><i class="icon ion-ios-glasses-outline"></i></div>
 				<div class="container">
 				<div class="row">
@@ -185,7 +186,7 @@
 						<a class="red-btn" href="http://www.barnesandnoble.com/s/My-Parents-are-Getting-Divorced...Now-What" target="_blank">Barnes &amp; Noble</a>
 						<a class="red-btn" href="http://www.friesenpress.com/bookstore/title/119734000012107909/Seamus-Morrison-My-Parents-are-Getting-Divorced...Now-What%3F" target="_blank">FriesenPress</a>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-xs-12">
 						<img class="shea-hero" alt="bookcover" src="images/bookofficial.png">
 						</div>
 					</div>
@@ -233,7 +234,11 @@
 		<script src="javascript/app.js" type="text/javascript"></script>
 		<script src="javascript/modernizr.custom.js" type="text/javascript"></script>
 		<script src="javascript/slick.js" type="text/javascript"></script>
-		<script src="javascript/wow.js" type="text/javascript"></script>
+		<script src="javascript/wow.min.js" type="text/javascript"></script>
+
+		<script>
+ 		new WOW().init();
+	</script>
 	
 
 

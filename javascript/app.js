@@ -25,63 +25,6 @@ $(window).on('scroll',function(){
 
 // Push Menu
 
-// var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-// 		showRightPush = document.getElementById( 'showRightPush' ),
-// 		body = document.body;
-
-// showRightPush.onclick = function() {
-// 	classie.toggle( this, 'active' );
-// 	classie.toggle( body, 'cbp-spmenu-push-toleft' );
-// 	classie.toggle( menuRight, 'cbp-spmenu-open' );
-// 	disableOther( 'showRightPush' );
-// };
-
-// function disableOther( button ) {
-// 	if( button !== 'showRightPush' ) {
-// 		classie.toggle( showRightPush, 'disabled' );
-// 	}
-// 	else if (button == 'showRightPush') {
-
-// 	}
-// }
-
-
-
-// Toggle between menu icon and 'x' to close menu
-
-// $(document).ready(function(e) {
-// 	$('#showRightPush').click(function() {
-//     	$(this).toggleClass('ion-navicon ion-ios-close-empty');
-
-// 	});
-// });
-
-
-// $(document).ready(function() {
-// 	$('#showRightPush').click(function() {
-//     	// $(this).toggleClass('lines-button, escape');
-
-//    			 var menu = $('.icon-menu');
-//     		menu.animate({ opacity: 0 }, 200);
-
-//    			$('.cbp-spmenu').animate({
-//       		right: "0px"
-//     		}, 200);
-
-// 	    	$('body').animate({
-// 	      	left: "-285px"
-// 	    	}, 200);
-
-// 	    	$('.menu').animate({
-// 		      left: "-285px"
-// 		    }, 200);
-
-// 		    $('body').animate({
-// 		      left: "0px"
-// 		    }, 200);
-
-//   });
-// });
 
 $(document).ready(function() {
 
