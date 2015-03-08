@@ -103,11 +103,11 @@ p, .aboutBook, .ebook {
     height: auto;
     max-width: 100%; }
   .hero .hero-quote {
-    font-family: "alex_brushregular";
-    font-size: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
     display: block;
     color: #444444;
-    margin: 4%; }
+    margin: 4% 2%; }
 
 .overlay {
   position: absolute;
