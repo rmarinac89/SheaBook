@@ -116,7 +116,7 @@
 		color: $darkgrey;
 		line-height: 1.8;
 		font-size: 1.5rem;
-		// padding-right:60px;
+	
 	}
 
 	.suit-img {
@@ -152,16 +152,25 @@
 
 	.col-md-4 {
 		text-align: center;
-		margin:14% 0;
+		margin:13% 0;
 	}
 
-	p, h3, ul {
+	p {
 		color: $white;
+		text-align:justify;
 	}
+
 
 	h3 {
 		margin: 20px 0 30px 0;
+		text-align:center;
+		color: $babyblue;
 		
+	}
+
+	.separator {
+		width:14%;
+		border:1px solid #fff;
 	}
 
 
@@ -236,6 +245,7 @@
 }
 
 
+
 // Social Media
 
 
@@ -278,18 +288,6 @@
 
 
 // Menu Icon
-
-.menu-icon {
-	float:right;
-
-	.bar {
-		height: 1px;
-		color: #000;
-		width:15px;
-	}
-}
-
-
 
 $color: #000;
 $button-size : 2.5rem; 
@@ -448,29 +446,6 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 }
 
 
-/* Push classes applied to the body */
-
-// .cbp-spmenu-push {
-// 	overflow-x: hidden;
-// 	position: relative;
-// 	left: 0;
-// }
-
-
-// .cbp-spmenu-push-toleft {
-// 	left: -240px;
-// }
-
-/* Transitions */
-
-// .cbp-spmenu,
-// .cbp-spmenu-push {
-// 	-webkit-transition: all 0.3s ease;
-// 	-moz-transition: all 0.3s ease;
-// 	transition: all 0.3s ease;
-// }
-
-/* Example media queries */
 
 @import "media-queries";
 
