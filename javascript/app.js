@@ -1,4 +1,4 @@
-// Fade Hero
+// Fade Hero on scroll
 
 $(window).scroll(function(){
     $(".hero").css("opacity", 1 - $(window).scrollTop() / 850);
@@ -24,7 +24,6 @@ $(window).on('scroll',function(){
 
 
 // Push Menu
-
 
 $(document).ready(function() {
 

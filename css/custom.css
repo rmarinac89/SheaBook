@@ -12,7 +12,7 @@ p, .aboutBook, .ebook {
   color: #fff;
   cursor: pointer; }
 
-.cbp-spmenu .ion-ios-person-outline, .cbp-spmenu .ion-ios-book-outline, .cbp-spmenu .ion-ios-cloud-download-outline, .cbp-spmenu .ion-ios-chatbubble-outline, .cbp-spmenu .ion-ios-upload-outline, .cbp-spmenu .ion-ios-glasses-outline {
+.cbp-spmenu .ion-ios-person-outline, .cbp-spmenu .ion-ios-book-outline, .cbp-spmenu .ion-ios-cloud-download-outline, .cbp-spmenu .ion-ios-chatbubble-outline, .cbp-spmenu .ion-ios-upload-outline, .cbp-spmenu .ion-ios-glasses-outline, .cbp-spmenu .ion-ios-star-outline {
   font-size: 2rem;
   position: absolute;
   right: 0;
@@ -161,11 +161,17 @@ p, .aboutBook, .ebook {
     background: rgba(255, 93, 85, 0.64); }
   .macbook .col-md-4 {
     text-align: center;
-    margin: 14% 0; }
-  .macbook p, .macbook .aboutBook, .macbook .ebook, .macbook h3, .macbook ul {
-    color: white; }
+    margin: 13% 0; }
+  .macbook p, .macbook .aboutBook, .macbook .ebook {
+    color: white;
+    text-align: justify; }
   .macbook h3 {
-    margin: 20px 0 30px 0; }
+    margin: 20px 0 30px 0;
+    text-align: center;
+    color: #00c8f8; }
+  .macbook .separator {
+    width: 14%;
+    border: 1px solid #fff; }
 
 .ebook {
   background: #f8f8f8; }
@@ -219,13 +225,6 @@ p, .aboutBook, .ebook {
       color: white; }
   .social-media a {
     text-decoration: none; }
-
-.menu-icon {
-  float: right; }
-  .menu-icon .bar {
-    height: 1px;
-    color: #000;
-    width: 15px; }
 
 .lines-button {
   display: inline-block;
@@ -337,9 +336,6 @@ p, .aboutBook, .ebook {
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0px; }
 
-/* Push classes applied to the body */
-/* Transitions */
-/* Example media queries */
 @media screen and (max-width: 55.1875em) {
   .cbp-spmenu-horizontal {
     font-size: 75%;
@@ -361,6 +357,9 @@ p, .aboutBook, .ebook {
 
   .macbook {
     min-height: 70em; } }
+@media screen and (min-width: 22.5em) and (max-width: 61.9375em) {
+  .macbook p, .macbook .aboutBook, .macbook .ebook {
+    text-align: center; } }
 @media screen and (max-width: 47.5em) {
   .hero .shea-hero {
     margin-top: 5em;
@@ -381,7 +380,7 @@ p, .aboutBook, .ebook {
     margin: 10% 0; }
 
   .macbook {
-    min-height: 63em; }
+    min-height: 69em; }
 
   .testimonials {
     margin-bottom: 5em; }

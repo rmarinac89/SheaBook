@@ -15,11 +15,13 @@
 		overflow: auto;
 	}
 
+
 }
 
 
 
-//761px = 47.5626em to 991px 
+//761px to 991px 
+
 @media screen and (min-width:47.5626em) and (max-width: 61.9375em) {
 	
 	.hero .shea-hero {
@@ -41,8 +43,18 @@
 
 	.macbook {
 		min-height: 70em;
+
 	}
 	
+}
+
+//360px to 991px
+
+@media screen and (min-width:22.5em) and (max-width:61.9375em) {
+
+		.macbook p {
+		text-align: center;
+	}
 }
 
 
@@ -77,7 +89,7 @@
 	}
 
 	.macbook {
-		min-height: 63em;
+		min-height: 69em;
 	}
 
 
