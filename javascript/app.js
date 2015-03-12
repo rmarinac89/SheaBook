@@ -1,9 +1,11 @@
 // Fade Hero on scroll
 
-$(window).scroll(function(){
-    $(".hero").css("opacity", 1 - $(window).scrollTop() / 850);
-  });
 
+$(document).ready(function() {
+	$(window).scroll(function(){
+    $(".hero").css("opacity", 1 - $(window).scrollTop() / 850);
+  });	
+});
 
 
 // Change Fixed Navbar Background on Scroll
@@ -89,12 +91,4 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
-
-
-
-
-
-
-
-
 
