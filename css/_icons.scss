@@ -27,7 +27,7 @@
 	margin:20px 0;
 	padding-top: 20px;
 
-	.ion-ios-book-outline, .ion-ios-person-outline, .ion-ios-cloud-download-outline, .ion-ios-chatbubble-outline, .ion-ios-glasses-outline {
+	.ion-ios-book-outline, .ion-ios-person-outline, .ion-ios-cloud-download-outline, .ion-ios-chatbubble-outline, .ion-ios-glasses-outline, .ion-ios-star-outline {
 	font-size: 4rem;
 	color:#444444;
 	text-align:center;
@@ -93,6 +93,17 @@
 		font-size: 1.3rem;
 	}
 }
+
+.ion-star {
+	@include transition(all, 0.7s, ease);
+	
+	&:hover {
+	-webkit-transform: scale(2);
+	transform: scale(2);
+
+	}
+}
+
 
 
 
