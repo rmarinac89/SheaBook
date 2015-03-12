@@ -424,7 +424,7 @@ blockquote {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003438}}
 .cbp-spmenu {
-  background: #828282;
+  background: #444;
   position: fixed;
   z-index: 9999; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003443}}
@@ -446,13 +446,13 @@ blockquote {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003466}}
 .menu-header {
-  background: #828282;
+  background: #444;
   padding: 20px;
   margin-bottom: 15px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003472}}
   .menu-header h3 {
     display: inline-block;
-    color: #B70F0A;
+    color: white;
     font-size: 2rem;
     margin: 0; }
 
