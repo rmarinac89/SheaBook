@@ -47,7 +47,7 @@ p, .aboutBook, .ebook {
   color: #B70F0A;
   padding: 1% 6%;
   border-radius: 6px;
-  -webkit-tap-highlight-color: rgba(34, 34, 34, 0.6); }
+  -webkit-tap-highlight-color: rgba(204, 204, 204, 0.8); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/_icons\.scss}line{font-family:\0000363}}
   .red-btn:hover {
     background: #B70F0A;
