@@ -51,6 +51,7 @@
 
 	.red-btn {
 		margin:0 10px 0 0;
+		-webkit-tap-highlight-color: rgba(238,238,238,0.8);
 	}
 
 	.shea-hero {
@@ -327,6 +328,7 @@ blockquote {
 
 			&:hover {
 				opacity: 0.4;
+				cursor: crosshair;
 			}
 }
 
