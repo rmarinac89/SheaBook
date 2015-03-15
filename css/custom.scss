@@ -346,11 +346,6 @@ blockquote {
 		padding:4%;
 		text-align: center;
 
-		
-		&.facebook {
-		-webkit-tap-highlight-color: rgba(59,89,152,1);
-
-		}
 
 		&.facebook:hover {
 			background:#3b5998;
@@ -463,8 +458,8 @@ $transition: 1s; // increase this to see the transformations in slow-motion
 	}
 
 	& a:active {
-		background: #afdefa; //menu blue
-		color: #47a3da;
+		background: #B70F0A;
+		color: $white;
 	}
 
 
