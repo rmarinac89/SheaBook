@@ -74,19 +74,20 @@ p, .aboutBook, .ebook {
   .copyright a {
     text-decoration: none;
     border-bottom: 1px dotted #aaa !important;
-    color: #B70F0A; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/_icons\.scss}line{font-family:\0000393}}
+    color: #B70F0A;
+    -webkit-tap-highlight-color: rgba(34, 34, 34, 0.5); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/_icons\.scss}line{font-family:\0000394}}
   .copyright .ion-ios-heart {
     color: #B70F0A;
     font-size: 1.3rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/_icons\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/_icons\.scss}line{font-family:\00003100}}
 .ion-star {
   -webkit-transition: all, 0.7s, ease;
   -moz-transition: all, 0.7s, ease;
   -ms-transition: all, 0.7s, ease;
   transition: all, 0.7s, ease; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/_icons\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/_icons\.scss}line{font-family:\00003103}}
   .ion-star:hover {
     -webkit-transform: scale(2);
     transform: scale(2); }
@@ -343,31 +344,35 @@ blockquote {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003341}}
 .social-media {
   background: #444444; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003344}}
+  .social-media a:nth-child(1) {
+    -webkit-tap-highlight-color: #3b5998;
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003352}}
   .social-media .social-outlets {
     padding: 4%;
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003356}}
     .social-media .social-outlets.facebook:hover {
       background: #3b5998;
       color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003361}}
     .social-media .social-outlets.twitter:hover {
       background: #4099ff;
       color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003366}}
     .social-media .social-outlets.mail:hover {
       background: #b70f0a;
       color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003371}}
     .social-media .social-outlets.phone:hover {
       background: #169016;
       color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003378}}
   .social-media a {
     text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003391}}
 .lines-button {
   display: inline-block;
   padding: 0.8rem 0;
@@ -380,7 +385,7 @@ blockquote {
   user-select: none;
   z-index: 9999; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003404}}
 .lines {
   display: inline-block;
   width: 2.5rem;
@@ -392,7 +397,7 @@ blockquote {
   border-radius: 0.16667rem;
   position: relative;
   /*create the upper and lower lines as pseudo-elements of the middle line*/ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003409}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003415}}
   .lines:before, .lines:after {
     display: inline-block;
     width: 2.5rem;
@@ -407,29 +412,29 @@ blockquote {
     content: '';
     transform-origin: 0.16667rem center;
     -webkit-transform-origin: 0.16667rem center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003422}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003428}}
   .lines:before {
     top: 0.625rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003423}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003429}}
   .lines:after {
     top: -0.625rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003426}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003432}}
 .lines-button:hover {
   opacity: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003431}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003437}}
   .lines-button:hover .lines:before {
     top: 0.71429rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003432}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003438}}
   .lines-button:hover .lines:after {
     top: -0.71429rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003441}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003447}}
 .cbp-spmenu {
   background: #444;
   position: fixed;
   z-index: 9999; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003446}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003452}}
   .cbp-spmenu a {
     display: block;
     color: white;
@@ -437,21 +442,21 @@ blockquote {
     font-weight: 300;
     height: 60px;
     line-height: 60px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003455}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003461}}
   .cbp-spmenu a:hover {
     background: rgba(106, 106, 106, 0.3);
     text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003460}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003466}}
   .cbp-spmenu a:active {
     background: #afdefa;
     color: #47a3da; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003469}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003475}}
 .menu-header {
   background: #444;
   padding: 20px;
   margin-bottom: 15px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003475}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003481}}
   .menu-header h3 {
     display: inline-block;
     color: white;
@@ -459,30 +464,30 @@ blockquote {
     margin: 0; }
 
 /* Orientation-dependent styles for the content of the menu */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003488}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003494}}
 .cbp-spmenu-vertical {
   width: 240px;
   height: 100%;
   top: 0;
   z-index: 9999; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003494}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003500}}
   .cbp-spmenu-vertical a {
     border-bottom: 1px solid rgba(106, 106, 106, 0.3);
     padding: 0 0 0 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003502}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003508}}
 .cbp-spmenu-horizontal {
   width: 100%;
   height: 150px;
   left: 0;
   z-index: 9999;
   overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003509}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003515}}
   .cbp-spmenu-horizontal h3 {
     height: 100%;
     width: 20%;
     float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003515}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003521}}
   .cbp-spmenu-horizontal a {
     float: left;
     width: 20%;
@@ -490,11 +495,11 @@ blockquote {
     border-left: 1px solid #258ecd; }
 
 /* Vertical menu slides from the right */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003528}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003534}}
 .cbp-spmenu-right {
   right: -240px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003533}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Rocco_M\/dev\/SheaBook\/css\/custom\.scss}line{font-family:\00003539}}
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0px; }
 
