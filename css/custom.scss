@@ -341,6 +341,12 @@ blockquote {
 .social-media {
 	background:#444444;
 
+	& a:nth-child(1) {
+		-webkit-tap-highlight-color: rgba(59,89,152,1);
+		color: $white;
+
+	}
+
 
 
 	.social-outlets {
